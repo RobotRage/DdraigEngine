@@ -1,10 +1,16 @@
-#include <SFML/Graphics.hpp>
+#include "StandardIncludes.h"
+#include "QueueDraw.h"
+
+
+void loop()
+{
+
+}
 
 int main()
 {
-    sf::RenderWindow window(sf::VideoMode({ 200, 200 }), "SFML works!");
-    sf::CircleShape shape(100.f);
-    shape.setFillColor(sf::Color::Green);
+    sf::RenderWindow window(sf::VideoMode({ 800, 1000 }), "DdraigEngine");
+
 
     while (window.isOpen())
     {
@@ -14,8 +20,11 @@ int main()
                 window.close();
         }
 
+
+        loop();
+
         window.clear();
-        window.draw(shape);
+        draw(window);
         window.display();
     }
 }

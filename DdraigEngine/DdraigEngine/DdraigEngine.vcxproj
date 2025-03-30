@@ -135,7 +135,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="EngineGUI.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="QueueDraw.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="QueueDraw.h" />
+    <ClInclude Include="StandardIncludes.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
