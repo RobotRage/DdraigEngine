@@ -1,6 +1,11 @@
 #include "StandardIncludes.h"
 #include "QueueDraw.h"
+#include "EngineGUI.h"
 
+void onStart()
+{
+    loadDefaultGUIElements();
+}
 
 void loop()
 {
@@ -9,8 +14,10 @@ void loop()
 
 int main()
 {
-    sf::RenderWindow window(sf::VideoMode({ 800, 1000 }), "DdraigEngine");
 
+    sf::RenderWindow window(sf::VideoMode({ screenSize }), "DdraigEngine");
+
+    onStart();
 
     while (window.isOpen())
     {

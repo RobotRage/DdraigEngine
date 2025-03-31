@@ -140,6 +140,7 @@
     <ClCompile Include="QueueDraw.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="EngineGUI.h" />
     <ClInclude Include="QueueDraw.h" />
     <ClInclude Include="StandardIncludes.h" />
   </ItemGroup>
