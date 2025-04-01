@@ -1,17 +1,39 @@
 #include "StandardIncludes.h"
 #include "EngineGUI.h"
 
-std::vector<panel> onscreenPanels;
 
-void draw(sf::RenderWindow & rw)
+void drawAllPanels(sf::RenderWindow& rw, panel & pan)
 {
-	for (int i = 0; i < onscreenPanels.size(); i++)
+	
+	rw.draw(pan);
+
+	for (int i = 0; i < pan.childPanels.size(); i++)
 	{
-		rw.draw(onscreenPanels[i]);
+		drawAllPanels(rw, *pan.childPanels.at(i));
 	}
 }
 
-void queueToDraw(panel pan)
+void draw(sf::RenderWindow & rw)
 {
-	onscreenPanels.push_back(pan);
+	for (int i = 0; i < onScreenPanelsParent.size(); i++)
+	{
+		drawAllPanels(rw, *onScreenPanelsParent.at(i));
+	}
+
+}
+
+void queueToDraw(panel & pan)
+{
+	onScreenPanelsParent.push_back(&pan);
+}
+
+void deletePanel(std::string tag)
+{
+	for (int i = 0; i < onScreenPanelsParent.size(); i++)
+	{
+		if (onScreenPanelsParent.at(i)->tag == tag)
+		{
+			onScreenPanelsParent.erase(onScreenPanelsParent.begin() + i);
+		}
+	}
 }

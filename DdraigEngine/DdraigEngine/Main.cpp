@@ -9,7 +9,7 @@ void onStart()
 
 void loop()
 {
-
+    checkMouseInput();
 }
 
 int main()
