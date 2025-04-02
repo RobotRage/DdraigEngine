@@ -4,6 +4,7 @@
 
 void drawAllPanels(sf::RenderWindow& rw, panel & pan)
 {
+	//if playmode=true only draw the "stop" button to exit playmode
 	rw.draw(pan);
 	if (pan.spriteShow) { rw.draw(*pan.sprite); }
 	for (int i = 0; i < pan.childPanels.size(); i++)

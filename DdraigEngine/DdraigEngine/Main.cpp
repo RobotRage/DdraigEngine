@@ -5,7 +5,7 @@
 
 float screenX;
 float screenY;
-
+bool playmode = false;
 void onStart()
 {
     loadDefaultGUIElements();
@@ -17,13 +17,18 @@ void loop()
 }
 
 sf::RenderWindow window;
+sf::View viewMainEditor;
 
 int main()
 {
     screenX = sf::VideoMode::getDesktopMode().size.x/1.3;
     screenY = sf::VideoMode::getDesktopMode().size.y/1.3;
 
+    viewMainEditor.setCenter(sf::Vector2f(screenX/2, screenY/2));
+    viewMainEditor.setSize(sf::Vector2f(screenX, screenY));
+
     window.create(sf::VideoMode({ sf::Vector2u(screenX, screenY) }), "DdraigEngine", sf::Style::Close);
+    window.setView(viewMainEditor);
 
     onStart();
 

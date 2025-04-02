@@ -9,7 +9,8 @@
 -Call button functionality as well as updating GUI to draw new elements or stop drawing them
 
 TODO:
-	-resize option to resize window, scale all graphics and recreate window
+    -move/pan view with middle mouse button, update gui to follow camera
+	-resize option to resize window, scale all graphics and recreate window and viewport
 */
 
 std::vector<panel*> onScreenPanelsParent;
