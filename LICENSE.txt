@@ -2,7 +2,7 @@ The Software is provided to you by the Licensor under the License, as defined be
 
 The grant of rights under the License will not include, and the License does not grant to you, the right to Sell the Software.
 
-A product or service whose value/origin derives, entirely or substantially, from the functionality of the Software is subject to licensing fees for revenues over 10,000USD.
+A product or service whose value/origin derives, entirely or substantially, from the functionality of the Software is subject to fees of 15% for revenues over 10,000USD.
 
 Software: [DdraigEngine]
 
