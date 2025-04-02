@@ -6,6 +6,6 @@ A product or service whose value/origin derives, entirely or substantially, from
 
 Software: [DdraigEngine]
 
-License: [DraigEngineLicense-v1.0]
+License: [DraigEngineLicense-v1.1]
 
 Licensor: [PJR Tech]
