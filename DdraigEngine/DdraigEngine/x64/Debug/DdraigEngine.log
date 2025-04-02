@@ -6,83 +6,24 @@ C:\SFML-3.0.0\include\SFML\System\Exception.hpp(41,47): warning C4275: non dll-i
       C:\SFML-3.0.0\include\SFML\System\Exception.hpp(41,23):
       see declaration of 'sf::Exception'
   
-C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\StandardIncludes.h(10,41): warning C4244: 'argument': conversion from 'float' to 'T', possible loss of data
-C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\StandardIncludes.h(10,41): warning C4244:         with
-C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\StandardIncludes.h(10,41): warning C4244:         [
-C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\StandardIncludes.h(10,41): warning C4244:             T=unsigned int
-C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\StandardIncludes.h(10,41): warning C4244:         ]
-  (compiling source file 'EngineGUI.cpp')
-  
-C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\StandardIncludes.h(10,32): warning C4244: 'argument': conversion from 'float' to 'T', possible loss of data
-C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\StandardIncludes.h(10,32): warning C4244:         with
-C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\StandardIncludes.h(10,32): warning C4244:         [
-C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\StandardIncludes.h(10,32): warning C4244:             T=unsigned int
-C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\StandardIncludes.h(10,32): warning C4244:         ]
-  (compiling source file 'EngineGUI.cpp')
-  
-C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\EngineGUI.cpp(23,14): warning C4244: 'initializing': conversion from 'T' to 'int', possible loss of data
-C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\EngineGUI.cpp(23,14): warning C4244:         with
-C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\EngineGUI.cpp(23,14): warning C4244:         [
-C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\EngineGUI.cpp(23,14): warning C4244:             T=float
-C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\EngineGUI.cpp(23,14): warning C4244:         ]
-C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\EngineGUI.cpp(24,14): warning C4244: 'initializing': conversion from 'T' to 'int', possible loss of data
-C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\EngineGUI.cpp(24,14): warning C4244:         with
-C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\EngineGUI.cpp(24,14): warning C4244:         [
-C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\EngineGUI.cpp(24,14): warning C4244:             T=float
-C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\EngineGUI.cpp(24,14): warning C4244:         ]
+C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\EngineGUI.cpp(25,14): warning C4244: 'initializing': conversion from 'T' to 'int', possible loss of data
+C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\EngineGUI.cpp(25,14): warning C4244:         with
+C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\EngineGUI.cpp(25,14): warning C4244:         [
+C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\EngineGUI.cpp(25,14): warning C4244:             T=float
+C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\EngineGUI.cpp(25,14): warning C4244:         ]
 C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\EngineGUI.cpp(26,14): warning C4244: 'initializing': conversion from 'T' to 'int', possible loss of data
 C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\EngineGUI.cpp(26,14): warning C4244:         with
 C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\EngineGUI.cpp(26,14): warning C4244:         [
 C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\EngineGUI.cpp(26,14): warning C4244:             T=float
 C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\EngineGUI.cpp(26,14): warning C4244:         ]
-C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\EngineGUI.cpp(27,14): warning C4244: 'initializing': conversion from 'T' to 'int', possible loss of data
-C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\EngineGUI.cpp(27,14): warning C4244:         with
-C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\EngineGUI.cpp(27,14): warning C4244:         [
-C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\EngineGUI.cpp(27,14): warning C4244:             T=float
-C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\EngineGUI.cpp(27,14): warning C4244:         ]
-  Main.cpp
-C:\SFML-3.0.0\include\SFML\System\Exception.hpp(41,47): warning C4275: non dll-interface class 'std::runtime_error' used as base for dll-interface class 'sf::Exception'
-  (compiling source file 'Main.cpp')
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\stdexcept(100,19):
-      see declaration of 'std::runtime_error'
-      C:\SFML-3.0.0\include\SFML\System\Exception.hpp(41,23):
-      see declaration of 'sf::Exception'
-  
-C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\StandardIncludes.h(10,41): warning C4244: 'argument': conversion from 'float' to 'T', possible loss of data
-C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\StandardIncludes.h(10,41): warning C4244:         with
-C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\StandardIncludes.h(10,41): warning C4244:         [
-C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\StandardIncludes.h(10,41): warning C4244:             T=unsigned int
-C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\StandardIncludes.h(10,41): warning C4244:         ]
-  (compiling source file 'Main.cpp')
-  
-C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\StandardIncludes.h(10,32): warning C4244: 'argument': conversion from 'float' to 'T', possible loss of data
-C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\StandardIncludes.h(10,32): warning C4244:         with
-C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\StandardIncludes.h(10,32): warning C4244:         [
-C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\StandardIncludes.h(10,32): warning C4244:             T=unsigned int
-C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\StandardIncludes.h(10,32): warning C4244:         ]
-  (compiling source file 'Main.cpp')
-  
-  QueueDraw.cpp
-C:\SFML-3.0.0\include\SFML\System\Exception.hpp(41,47): warning C4275: non dll-interface class 'std::runtime_error' used as base for dll-interface class 'sf::Exception'
-  (compiling source file 'QueueDraw.cpp')
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\stdexcept(100,19):
-      see declaration of 'std::runtime_error'
-      C:\SFML-3.0.0\include\SFML\System\Exception.hpp(41,23):
-      see declaration of 'sf::Exception'
-  
-C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\StandardIncludes.h(10,41): warning C4244: 'argument': conversion from 'float' to 'T', possible loss of data
-C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\StandardIncludes.h(10,41): warning C4244:         with
-C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\StandardIncludes.h(10,41): warning C4244:         [
-C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\StandardIncludes.h(10,41): warning C4244:             T=unsigned int
-C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\StandardIncludes.h(10,41): warning C4244:         ]
-  (compiling source file 'QueueDraw.cpp')
-  
-C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\StandardIncludes.h(10,32): warning C4244: 'argument': conversion from 'float' to 'T', possible loss of data
-C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\StandardIncludes.h(10,32): warning C4244:         with
-C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\StandardIncludes.h(10,32): warning C4244:         [
-C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\StandardIncludes.h(10,32): warning C4244:             T=unsigned int
-C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\StandardIncludes.h(10,32): warning C4244:         ]
-  (compiling source file 'QueueDraw.cpp')
-  
-  Generating Code...
+C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\EngineGUI.cpp(28,14): warning C4244: 'initializing': conversion from 'T' to 'int', possible loss of data
+C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\EngineGUI.cpp(28,14): warning C4244:         with
+C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\EngineGUI.cpp(28,14): warning C4244:         [
+C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\EngineGUI.cpp(28,14): warning C4244:             T=float
+C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\EngineGUI.cpp(28,14): warning C4244:         ]
+C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\EngineGUI.cpp(29,14): warning C4244: 'initializing': conversion from 'T' to 'int', possible loss of data
+C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\EngineGUI.cpp(29,14): warning C4244:         with
+C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\EngineGUI.cpp(29,14): warning C4244:         [
+C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\EngineGUI.cpp(29,14): warning C4244:             T=float
+C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\EngineGUI.cpp(29,14): warning C4244:         ]
   DdraigEngine.vcxproj -> C:\DdraigEngine\DdraigEngine\DdraigEngine\x64\Debug\DdraigEngine.exe

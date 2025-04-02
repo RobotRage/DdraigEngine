@@ -12,6 +12,9 @@ public:
 	
 	std::function<void()> action;
 
+    bool spriteShow = false;
+    sf::Sprite * sprite;
+
     template<typename F, typename... Args>
     void setAction(F&& func, Args&&... args) {
         // Capture this pointer and arguments
@@ -20,7 +23,6 @@ public:
             std::apply(func, std::tuple_cat(std::make_tuple(this), args));
             };
     }
-
 
 	sf::RectangleShape rectangle;
 	std::string tag;
@@ -37,6 +39,7 @@ public:
         setAction(&panel::togglePanelVisibility, !visible);
     }
 
+    void noAction() {}
 
 private:
 	virtual void draw(sf::RenderTarget& target, sf::RenderStates states) const;

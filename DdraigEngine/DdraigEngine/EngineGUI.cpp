@@ -3,12 +3,13 @@
 #include "EngineGUI.h"
 #include "QueueDraw.h"
 #include "iostream"
-/*
 
+/*
 -Check for mouse events (e.g. left and right click, hover)
 -Call button functionality as well as updating GUI to draw new elements or stop drawing them
 
-
+TODO:
+	-resize option to resize window, scale all graphics and recreate window
 */
 
 std::vector<panel*> onScreenPanelsParent;
@@ -17,6 +18,7 @@ panel leftSideRoofToFloorPanel;
 panel rightSideRoofToFloorPanel;
 panel squarePanel;
 
+panel topBarPanel;
 
 bool mouseInBounds(panel * pan, sf::Vector2i & mousePos)
 {
@@ -59,7 +61,7 @@ void checkAllPanelsClick()
 	}
 }
 
-bool releasedL = false;
+bool releasedL = false; //only trigger event once per click
 bool releasedR = false;
 void checkMouseInput() // inf loop
 {
@@ -99,37 +101,62 @@ void createNewGUIElementChild(panel parent)
 
 }
 
-void empty(std::string s) {}
 
 
+void loadImages()
+{
 
+}
+
+sf::Texture exitBtn("images//icon_close.png");
+sf::Sprite exitBtnSprite(exitBtn);
+
+//sf::Texture logo("images//Ddraig_Goch.png");
+//sf::Sprite logoSprite(logo);
+
+sf::Image icon("images//Ddraig_Goch.png");
 void loadDefaultGUIElements()
 {
+	window.setIcon(icon);
+
 	leftSideRoofToFloorPanel.rectangle.setFillColor(turquoise);
 	leftSideRoofToFloorPanel.rectangle.setSize(sf::Vector2(screenX/12.0f, screenY));
 	leftSideRoofToFloorPanel.rectangle.setPosition(sf::Vector2(0.0f, 0.0f));
-	leftSideRoofToFloorPanel.setAction(&panel::togglePanelVisibility, false);
+	leftSideRoofToFloorPanel.setAction(&panel::noAction);
 	leftSideRoofToFloorPanel.tag = "leftSideRoofToFloorPanel";
-
 	
 	rightSideRoofToFloorPanel.rectangle.setFillColor(turquoise);
 	rightSideRoofToFloorPanel.rectangle.setSize(sf::Vector2(screenX / 12.0f, screenY));
 	rightSideRoofToFloorPanel.rectangle.setPosition(sf::Vector2(screenX - rightSideRoofToFloorPanel.rectangle.getSize().x, 0.0f));
-	rightSideRoofToFloorPanel.setAction(&panel::togglePanelVisibility, false);
+	rightSideRoofToFloorPanel.setAction(&panel::noAction);
 	rightSideRoofToFloorPanel.tag = "rightSideRoofToFloorPanel";
 
-	
 	squarePanel.rectangle.setFillColor(lightGreen);
 	squarePanel.rectangle.setSize(sf::Vector2(screenX / 12.0f, screenY/3.0f));
 	squarePanel.rectangle.setPosition(sf::Vector2(screenX/2, 20.0f));
 	squarePanel.tag = "squarePanel";
-
 	squarePanel.setAction(&panel::togglePanelVisibility, false);
-
 	rightSideRoofToFloorPanel.childPanels.push_back(&squarePanel);
+
+
+	topBarPanel.rectangle.setFillColor(turquoise);
+	topBarPanel.rectangle.setSize(sf::Vector2(screenX, screenY/25));
+	topBarPanel.rectangle.setPosition(sf::Vector2f(0, 0));
+	topBarPanel.setAction(&panel::noAction);
+	topBarPanel.tag = "topBarPanel";
+
+	/*
+	logoPanel.rectangle.setPosition(sf::Vector2f(0, 0));
+	logoPanel.tag = "logoPanel";
+	logoPanel.setAction(&panel::noAction);
+	logoPanel.sprite = &logoSprite;
+	logoPanel.sprite->setScale(sf::Vector2f(0.15, 0.2));
+	logoPanel.spriteShow = true;
+	*/
 
 	queueToDraw(leftSideRoofToFloorPanel);
 	queueToDraw(rightSideRoofToFloorPanel);
+	queueToDraw(topBarPanel);
 }
 
 void panel::draw(sf::RenderTarget& target, sf::RenderStates states) const
