@@ -23,10 +23,8 @@ public:
 
 
 	sf::RectangleShape rectangle;
-
 	std::string tag;
 	std::vector<sf::Text> texts;
-
     std::vector<panel*> childPanels;
 
     void togglePanelVisibility(bool vis)
@@ -36,6 +34,7 @@ public:
         {
             childPanels[i]->togglePanelVisibility(visible);
         }
+        setAction(&panel::togglePanelVisibility, !visible);
     }
 
 

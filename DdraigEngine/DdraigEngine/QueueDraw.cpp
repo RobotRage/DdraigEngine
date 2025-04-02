@@ -4,7 +4,6 @@
 
 void drawAllPanels(sf::RenderWindow& rw, panel & pan)
 {
-	
 	rw.draw(pan);
 
 	for (int i = 0; i < pan.childPanels.size(); i++)
@@ -19,7 +18,6 @@ void draw(sf::RenderWindow & rw)
 	{
 		drawAllPanels(rw, *onScreenPanelsParent.at(i));
 	}
-
 }
 
 void queueToDraw(panel & pan)

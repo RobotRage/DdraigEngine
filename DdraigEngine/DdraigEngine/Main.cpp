@@ -12,11 +12,10 @@ void loop()
     checkMouseInput();
 }
 
+sf::RenderWindow window(sf::VideoMode({ screenSize }), "DdraigEngine");
+
 int main()
 {
-
-    sf::RenderWindow window(sf::VideoMode({ screenSize }), "DdraigEngine");
-
     onStart();
 
     while (window.isOpen())
