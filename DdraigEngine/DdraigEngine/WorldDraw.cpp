@@ -3,54 +3,40 @@
 #include "WorldDraw.h";
 #include <filesystem>
 
+		
 
 std::vector<panel> worldEntities;
 
-//sf::Sprite spriteRes[1];
-
-std::vector<sf::Sprite> spriteResources;
+std::list<sf::Sprite> spriteResources;
 std::vector<sf::Texture> textureResources;
-
-void newSprite()
-{
-	//for (int i = 0; i < sizeof(spriteRes); i++)
-	//{
-
-	//}
-}
 
 void loadTexture(sf::String path)
 {
 	sf::Texture worldEntityDefault;
 	worldEntityDefault.loadFromFile(std::filesystem::path(path));
-	textureResources.push_back(worldEntityDefault);
-
-	spriteResources.reserve(200); //TODO fix this
+	textureResources.push_back(worldEntityDefault);	
 }
 
 void loadSpriteResources(sf::Texture & texture)
 {
 	sf::Sprite worldEntitySprite(texture);
-	spriteResources.push_back(worldEntitySprite);
+	spriteResources.push_front(worldEntitySprite);
 }
 
-int i = 0;
 void newEntity()
 {
-	panel logoPanel;
-	logoPanel.rectangle.setPosition(sf::Vector2f(sf::Mouse::getPosition(window))+offset + viewMainEditor.getCenter());
+	panel entityPanel;
+	entityPanel.rectangle.setPosition(sf::Vector2f(sf::Mouse::getPosition(window))+offset + viewMainEditor.getCenter());
 	
-	logoPanel.tag = "NEW PANEL "+std::to_string(i);
-	logoPanel.setAction(&panel::noAction);
+	entityPanel.tag = "entityPanel";
+	entityPanel.setAction(&panel::noAction);
 
 	loadSpriteResources(textureResources[0]);
 
-	logoPanel.sprite = &spriteResources[i];
-	i++;
+	entityPanel.sprite = &spriteResources.front();
 
-	logoPanel.sprite->setScale(sf::Vector2f(0.15, 0.2));
-	logoPanel.spriteShow = true;
-	logoPanel.sprite->setPosition(sf::Vector2f(sf::Mouse::getPosition(window))+offset + viewMainEditor.getCenter());
-	worldEntities.push_back(logoPanel);
-	
+	entityPanel.sprite->setScale(sf::Vector2f(0.15, 0.2));
+	entityPanel.spriteShow = true;
+	entityPanel.sprite->setPosition(sf::Vector2f(sf::Mouse::getPosition(window))+offset + viewMainEditor.getCenter());
+	worldEntities.push_back(entityPanel);
 }

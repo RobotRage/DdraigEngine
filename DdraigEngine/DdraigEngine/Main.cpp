@@ -9,8 +9,9 @@ float screenY;
 bool playmode = false;
 void onStart()
 {
-    loadDefaultGUIElements();
     loadTexture("images//Ddraig_Goch.png");
+    loadDefaultGUIElements();
+    
 }
 
 void loop()

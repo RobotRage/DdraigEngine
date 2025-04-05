@@ -9,15 +9,15 @@ C:\SFML-3.0.0\include\SFML\System\Exception.hpp(41,47): warning C4275: non dll-i
   
 C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\WorldDraw.cpp(2,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
 C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\WorldDraw.cpp(3,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\WorldDraw.cpp(25,33): warning C4834: discarding return value of function with [[nodiscard]] attribute
-C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\WorldDraw.cpp(50,48): warning C4305: 'argument': truncation from 'double' to 'T'
-C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\WorldDraw.cpp(50,48): warning C4305:         with
-C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\WorldDraw.cpp(50,48): warning C4305:         [
-C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\WorldDraw.cpp(50,48): warning C4305:             T=float
-C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\WorldDraw.cpp(50,48): warning C4305:         ]
-C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\WorldDraw.cpp(50,42): warning C4305: 'argument': truncation from 'double' to 'T'
-C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\WorldDraw.cpp(50,42): warning C4305:         with
-C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\WorldDraw.cpp(50,42): warning C4305:         [
-C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\WorldDraw.cpp(50,42): warning C4305:             T=float
-C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\WorldDraw.cpp(50,42): warning C4305:         ]
+C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\WorldDraw.cpp(16,33): warning C4834: discarding return value of function with [[nodiscard]] attribute
+C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\WorldDraw.cpp(38,50): warning C4305: 'argument': truncation from 'double' to 'T'
+C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\WorldDraw.cpp(38,50): warning C4305:         with
+C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\WorldDraw.cpp(38,50): warning C4305:         [
+C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\WorldDraw.cpp(38,50): warning C4305:             T=float
+C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\WorldDraw.cpp(38,50): warning C4305:         ]
+C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\WorldDraw.cpp(38,44): warning C4305: 'argument': truncation from 'double' to 'T'
+C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\WorldDraw.cpp(38,44): warning C4305:         with
+C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\WorldDraw.cpp(38,44): warning C4305:         [
+C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\WorldDraw.cpp(38,44): warning C4305:             T=float
+C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\WorldDraw.cpp(38,44): warning C4305:         ]
   DdraigEngine.vcxproj -> C:\DdraigEngine\DdraigEngine\DdraigEngine\x64\Debug\DdraigEngine.exe
