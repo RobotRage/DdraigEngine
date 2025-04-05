@@ -1,11 +1,13 @@
 #include "StandardIncludes.h"
 #include "EngineGUI.h"
-
+#include "WorldDraw.h"
 
 void drawAllPanels(sf::RenderWindow& rw, panel & pan)
 {
-	//if playmode=true only draw the "stop" button to exit playmode
-	rw.draw(pan);
+	setAllPanelsToScreen();
+
+	//TODO if playmode=true only draw the "stop" button to exit playmode
+	rw.draw(pan);	
 	if (pan.spriteShow) { rw.draw(*pan.sprite); }
 	for (int i = 0; i < pan.childPanels.size(); i++)
 	{
@@ -19,9 +21,11 @@ void draw(sf::RenderWindow & rw)
 	{
 		drawAllPanels(rw, *onScreenPanelsParent.at(i));
 	}
+	//TODO onscreen check
+
 }
 
-void queueToDraw(panel & pan)
+void queueToDrawPanel(panel & pan)
 {
 	onScreenPanelsParent.push_back(&pan);
 }

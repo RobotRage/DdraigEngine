@@ -23,7 +23,7 @@ public:
             std::apply(func, std::tuple_cat(std::make_tuple(this), args));
             };
     }
-
+    sf::Vector2f guiLockedPositionRelative = sf::Vector2f(0,0);
 	sf::RectangleShape rectangle;
 	std::string tag;
 	std::vector<sf::Text> texts;
@@ -49,3 +49,4 @@ extern std::vector<panel*> onScreenPanelsParent;
 
 void loadDefaultGUIElements();
 void checkMouseInput();
+void setAllPanelsToScreen();

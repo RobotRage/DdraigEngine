@@ -138,11 +138,13 @@
     <ClCompile Include="EngineGUI.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="QueueDraw.cpp" />
+    <ClCompile Include="WorldDraw.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="EngineGUI.h" />
     <ClInclude Include="QueueDraw.h" />
     <ClInclude Include="StandardIncludes.h" />
+    <ClInclude Include="WorldDraw.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
