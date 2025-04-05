@@ -3,7 +3,7 @@
 #include "EngineGUI.h"
 #include "QueueDraw.h"
 #include "iostream"
-
+#include "WorldDraw.h"
 /*
 -Check for mouse events (e.g. left and right click, hover)
 -Call button functionality as well as updating GUI to draw new elements or stop drawing them
@@ -106,6 +106,7 @@ void checkMouseInput() // inf loop
 	if (sf::Mouse::isButtonPressed(sf::Mouse::Button::Left))
 	{
 		if (leftClick) { return; }
+		newEntity();
 		leftClick = true;
 		checkAllPanelsClick();
 	}

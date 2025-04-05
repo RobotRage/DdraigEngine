@@ -1,29 +1,23 @@
-﻿  EngineGUI.cpp
+﻿  WorldDraw.cpp
+C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\WorldDraw.cpp(1,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
 C:\SFML-3.0.0\include\SFML\System\Exception.hpp(41,47): warning C4275: non dll-interface class 'std::runtime_error' used as base for dll-interface class 'sf::Exception'
-  (compiling source file 'EngineGUI.cpp')
+  (compiling source file 'WorldDraw.cpp')
       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\stdexcept(100,19):
       see declaration of 'std::runtime_error'
       C:\SFML-3.0.0\include\SFML\System\Exception.hpp(41,23):
       see declaration of 'sf::Exception'
   
-C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\EngineGUI.cpp(30,14): warning C4244: 'initializing': conversion from 'T' to 'int', possible loss of data
-C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\EngineGUI.cpp(30,14): warning C4244:         with
-C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\EngineGUI.cpp(30,14): warning C4244:         [
-C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\EngineGUI.cpp(30,14): warning C4244:             T=float
-C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\EngineGUI.cpp(30,14): warning C4244:         ]
-C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\EngineGUI.cpp(31,14): warning C4244: 'initializing': conversion from 'T' to 'int', possible loss of data
-C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\EngineGUI.cpp(31,14): warning C4244:         with
-C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\EngineGUI.cpp(31,14): warning C4244:         [
-C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\EngineGUI.cpp(31,14): warning C4244:             T=float
-C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\EngineGUI.cpp(31,14): warning C4244:         ]
-C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\EngineGUI.cpp(33,14): warning C4244: 'initializing': conversion from 'T' to 'int', possible loss of data
-C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\EngineGUI.cpp(33,14): warning C4244:         with
-C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\EngineGUI.cpp(33,14): warning C4244:         [
-C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\EngineGUI.cpp(33,14): warning C4244:             T=float
-C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\EngineGUI.cpp(33,14): warning C4244:         ]
-C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\EngineGUI.cpp(34,14): warning C4244: 'initializing': conversion from 'T' to 'int', possible loss of data
-C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\EngineGUI.cpp(34,14): warning C4244:         with
-C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\EngineGUI.cpp(34,14): warning C4244:         [
-C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\EngineGUI.cpp(34,14): warning C4244:             T=float
-C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\EngineGUI.cpp(34,14): warning C4244:         ]
+C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\WorldDraw.cpp(2,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\WorldDraw.cpp(3,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\WorldDraw.cpp(25,33): warning C4834: discarding return value of function with [[nodiscard]] attribute
+C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\WorldDraw.cpp(50,48): warning C4305: 'argument': truncation from 'double' to 'T'
+C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\WorldDraw.cpp(50,48): warning C4305:         with
+C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\WorldDraw.cpp(50,48): warning C4305:         [
+C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\WorldDraw.cpp(50,48): warning C4305:             T=float
+C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\WorldDraw.cpp(50,48): warning C4305:         ]
+C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\WorldDraw.cpp(50,42): warning C4305: 'argument': truncation from 'double' to 'T'
+C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\WorldDraw.cpp(50,42): warning C4305:         with
+C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\WorldDraw.cpp(50,42): warning C4305:         [
+C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\WorldDraw.cpp(50,42): warning C4305:             T=float
+C:\DdraigEngine\DdraigEngine\DdraigEngine\DdraigEngine\WorldDraw.cpp(50,42): warning C4305:         ]
   DdraigEngine.vcxproj -> C:\DdraigEngine\DdraigEngine\DdraigEngine\x64\Debug\DdraigEngine.exe

@@ -17,12 +17,16 @@ void drawAllPanels(sf::RenderWindow& rw, panel & pan)
 
 void draw(sf::RenderWindow & rw)
 {
+	//TODO onscreen check
+	for (int i = 0; i < worldEntities.size(); i++)
+	{
+		drawAllPanels(rw, worldEntities.at(i));
+	}
+
 	for (int i = 0; i < onScreenPanelsParent.size(); i++)
 	{
 		drawAllPanels(rw, *onScreenPanelsParent.at(i));
 	}
-	//TODO onscreen check
-
 }
 
 void queueToDrawPanel(panel & pan)

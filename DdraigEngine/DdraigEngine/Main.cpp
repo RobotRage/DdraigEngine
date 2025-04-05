@@ -1,7 +1,8 @@
 #include "StandardIncludes.h"
 #include "QueueDraw.h"
 #include "EngineGUI.h"
-#include <windows.h> 
+#include <windows.h>
+#include "WorldDraw.h"
 
 float screenX;
 float screenY;
@@ -9,6 +10,7 @@ bool playmode = false;
 void onStart()
 {
     loadDefaultGUIElements();
+    loadTexture("images//Ddraig_Goch.png");
 }
 
 void loop()
